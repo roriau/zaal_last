@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:theme="@style/Theme.MaterialComponents.Light.Bridge"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_white_1000"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/zaalImageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_black_1000"
+        android:padding="1dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/surguuli"
+        android:adjustViewBounds="true"> </ImageView>
+
+    <TextView
+        android:id="@+id/zaalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/md_white_1000"
+        android:textSize="15sp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="4dp"
+        android:layout_alignBottom="@+id/zaalImageSlider"
+        android:maxLines="1"
+        android:gravity="center" > </TextView>
+
+    <View
+        android:id="@+id/zaalDivider"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/zaalImageSlider" > </View>
+
+    <TextView
+        android:id="@+id/price_tal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Үнэ нэг талдаа: 20000₮"
+        android:textColor="@color/md_white_1000"
+        android:background="@drawable/rounded_corner"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/zaalImageSlider"
+        android:layout_toStartOf="@+id/zaalDivider"
+        android:gravity="center"
+        tools:ignore="HardcodedText"> </TextView>
+
+    <TextView
+        android:id="@+id/price_buten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/zaalDivider"
+        android:layout_marginStart="10dp"
+        android:textSize="13sp"
+        android:layout_below="@+id/zaalImageSlider"
+        android:textColor="@color/md_white_1000"
+        android:background="@drawable/rounded_corner"
+        android:padding="5dp"
+        android:text="Үнэ нэг талдаа: 50000₮"
+        android:gravity="center"
+        tools:ignore="HardcodedText">
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/sub_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_buten">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/zaal_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_grey_700"
+            android:text="Давуу талууд:
+Тэмцээн уралдаан зохион байгуулах боломжтой том талбайтай
+Стандарт шалтай
+Агааржуулалт дулааныг төгс шийдсэн
+Дуу, цуурай шингээгчтэй
+Спорт заалны түрээсийн үнэ: 50000 төг /1цаг/, 30000 төг /талдаа/
+Заалны хэмжээ:  Дунд
+Машины зогсоол:  Машины зогсоолтой."
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            tools:ignore="HardcodedText">
+        </TextView>
+    </androidx.core.widget.NestedScrollView>
+
+        <View
+            android:id="@+id/zaalDivider1"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/scrollView" > </View>
+
+    <TextView
+        android:id="@+id/addressTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/md_white_1000"
+        android:textSize="18sp"
+        android:padding="4dp"
+        android:text="ХАЯГ"
+        tools:ignore="HardcodedText">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/md_white_1000"
+        android:background="@drawable/rounded_corner"
+        android:padding="5dp"
+        android:text="Улаанбаатар"
+        tools:ignore="HardcodedText">
+    </TextView>
+
+    <TextView
+        android:id="@+id/district"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/md_white_1000"
+        android:background="@drawable/rounded_corner"
+        android:padding="5dp"
+        android:text="Баянзүрх дүүрэг"
+        tools:ignore="HardcodedText">
+    </TextView>
+
+    <TextView
+        android:id="@+id/khoroo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/md_white_1000"
+        android:background="@drawable/rounded_corner"
+        android:padding="5dp"
+        android:text="11-р хороо"
+        tools:ignore="HardcodedText">
+    </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нийслэл өргөн чөлөө, Хүннү гудамж, Дүнжингарав худалдааны төвийн замын урд."
+        tools:ignore="HardcodedText"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:textColor="@color/md_grey_700"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/orderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Захиалга өгөх"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/md_black_1000"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toStartOf="@+id/zaalDivider1"
+        android:layout_below="@+id/address"
+        app:icon="@drawable/ic_shopping"
+        app:iconTint="@color/colorPrimaryDark"
+        android:layout_marginEnd="10dp"
+        tools:ignore="HardcodedText"> </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Газрын зураг "
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/md_black_1000"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toEndOf="@+id/zaalDivider1"
+        android:layout_below="@+id/address"
+        android:layout_marginStart="10dp"
+        app:icon="@drawable/ic_directions"
+        app:iconSize="24dp"
+        app:iconTint="@color/colorPrimaryDark"
+        tools:ignore="HardcodedText"> </com.google.android.material.button.MaterialButton>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/primary_dark"
+        android:layout_below="@+id/sub_item"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="PxUsage"> </View>
+
+</RelativeLayout>

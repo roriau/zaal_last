@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    tools:context=".ZaalActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@color/md_white_1000"
+        app:subtitleTextColor="@color/md_white_1000"
+        android:background="@color/primary_dark"> </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/detail_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Алтан өргөө Спорт Заал"
+        android:textColor="@color/md_grey_900"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/detail_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_title"
+        android:text="Улаанбаатар Сонгино хайрхан дүүрэг 6-р хороо Алтжин бөмбөгөрийн 7-р лангуу"
+        android:textColor="@color/md_grey_500"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="12sp"
+        > </TextView>
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/detail_slider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/md_red_900"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/detail_address"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"> </com.smarteist.autoimageslider.SliderView>
+
+    <TextView
+        android:id="@+id/detail_label_open_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_slider"
+        android:text="Нээх Цаг"
+        android:textColor="@color/md_black_1000"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"> </TextView>
+
+    <TextView
+        android:id="@+id/detail_label_close_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_slider"
+        android:text="Хаах Цаг"
+        android:textColor="@color/md_black_1000"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/detail_label_open_hour"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold" > </TextView>
+
+            <TextView
+                android:id="@+id/detail_half_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_slider"
+                android:text="Үнэ талдаа"
+                android:textColor="@color/md_black_1000"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/detail_label_close_hour"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold" > </TextView>
+
+            <TextView
+                android:id="@+id/detail_full_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_slider"
+                android:text="Үнэ бүтэн"
+                android:textColor="@color/md_black_1000"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/detail_half_price_label"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold" > </TextView>
+
+    <TextView
+        android:id="@+id/detail_open_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08:00"
+        android:textColor="@color/md_grey_900"
+        android:layout_below="@+id/detail_label_open_hour"
+        android:layout_marginStart="20dp" > </TextView>
+
+    <TextView
+        android:id="@+id/detail_close_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22:00"
+        android:textColor="@color/md_grey_900"
+        android:layout_toEndOf="@+id/detail_label_open_hour"
+        android:layout_below="@+id/detail_label_close_hour"
+        android:layout_marginStart="20dp" > </TextView>
+
+            <TextView
+                android:id="@+id/detail_price_half"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25,000₮"
+                android:textColor="@color/md_grey_900"
+                android:layout_toEndOf="@+id/detail_label_close_hour"
+                android:layout_below="@+id/detail_label_close_hour"
+                android:layout_marginStart="20dp" > </TextView>
+
+            <TextView
+                android:id="@+id/detail_price_buten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50,000₮"
+                android:textColor="@color/md_grey_900"
+                android:layout_toEndOf="@+id/detail_half_price_label"
+                android:layout_below="@+id/detail_label_close_hour"
+                android:layout_marginStart="20dp" > </TextView>
+
+    <TextView
+        android:id="@+id/detail_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Давуу талууд:
+Тэмцээн уралдаан зохион байгуулах боломжтой том талбайтай
+Стандарт шалтай
+Агааржуулалт дулааныг төгс шийдсэн
+Дуу, цуурай шингээгчтэй
+Спорт заалны түрээсийн үнэ: 50000 төг /1цаг/, 30000 төг /талдаа/
+Заалны хэмжээ:  Дунд
+Машины зогсоол:  Машины зогсоолтой."
+        android:layout_below="@+id/detail_close_hour"
+        android:textColor="@color/md_black_1000"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp" > </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/detail_order_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Захиалах"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                app:iconGravity="textStart"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:icon="@drawable/ic_shopping"
+                app:iconSize="18dp"
+                android:padding="8dp"
+                android:layout_below="@id/detail_desc"> </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/detail_map_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Газрын зураг"
+                android:gravity="center"
+                app:iconGravity="textStart"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:icon="@drawable/ic_shopping"
+                app:iconSize="18dp"
+                android:padding="8dp"
+                android:layout_below="@id/detail_desc"> </com.google.android.material.button.MaterialButton>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

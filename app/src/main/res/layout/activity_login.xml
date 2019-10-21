@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradiant"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@color/md_white_1000"
+        app:subtitleTextColor="@color/md_white_1000"
+        android:background="@color/primary_dark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:minHeight="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/toolbarlogo">
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="БҮРТГҮҮЛЭХ"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#24458a"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:rotation="180" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/signUp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/card1"
+                android:scaleType="centerCrop"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/zaal_logo_trans"
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp">
+
+                <EditText
+                    android:id="@+id/login_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#aeb0a5"
+                    android:hint="Нэвтрэх Нэр, И-Мэйл, Утас"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:background="#00000000"
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginTop="30dp"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.1"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#c1c1c1"
+                    android:layout_marginTop="5dp"> </LinearLayout>
+
+                <EditText
+                    android:id="@+id/password_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#aeb0a5"
+                    android:singleLine="true"
+                    android:hint="Нууц Үг"
+                    android:textColor="@color/md_black_1000"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNone"
+                    android:background="#00000000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="30dp"
+                    android:letterSpacing="0.1"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#c1c1c1"
+                    android:layout_marginTop="5dp"> </LinearLayout>
+
+                <TextView
+                    android:id="@+id/forget_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Нууц үгээ мартсан уу?"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="26dp"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/signIn"
+        android:layout_above="@+id/signUp"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:src="@drawable/sig"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp" />
+
+</RelativeLayout>

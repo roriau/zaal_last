@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Заал.мн</string>
+    <string name="intro_desc">Заал.мн аппыг танилцуулж байна.</string>
+    <string name="intro2_desc">Энд харин юу бичэх вэ?</string>
+    <string name="intro3_desc">Энд ч гэсэн ямар нэгэн юм бичих хэрэгтэй.</string>
+    <string name="intro2_title">Гарчиг л байна даа.</string>
+    <string name="intro3_title">Гарчиг 3 байх</string>
+    <string name="google_maps_api_key">AIzaSyA27pvYRO3sqm0ytGbsmOII4vSDnQjQ1QU</string>
+    <string name="title_activity_maps">Газрын зураг</string>
+</resources>

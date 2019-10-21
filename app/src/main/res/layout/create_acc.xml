@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/createLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/zaal_logo"> </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/createLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/createLogo"
+        android:layout_marginTop="20dp">
+
+        <View android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/md_white_1000"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:layout_alignEnd="@id/strut"
+        android:layout_alignParentStart="true"
+        android:background="@color/primary_dark"
+        android:textColorHint="@color/md_grey_400"
+        android:hint="Имэйл"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlSymmetry"> </EditText>
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/md_white_1000"
+        android:layout_alignStart="@id/strut"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:layout_toEndOf="@+id/email_input"
+        android:background="@color/primary_dark"
+        android:textColorHint="@color/md_grey_400"
+        android:hint="Нэвтрэх нэр"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlSymmetry"> </EditText>
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/md_white_1000"
+        android:layout_alignEnd="@id/strut"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:layout_below="@+id/username_input"
+        android:layout_marginTop="5dp"
+        android:background="@color/primary_dark"
+        android:textColorHint="@color/md_grey_400"
+        android:hint="Нэр"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlSymmetry"> </EditText>
+
+    <EditText
+        android:id="@+id/phone_number_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/md_white_1000"
+        android:layout_alignStart="@id/strut"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:layout_below="@+id/username_input"
+        android:layout_toEndOf="@+id/name_input"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/primary_dark"
+        android:textColorHint="@color/md_grey_400"
+        android:hint="Утасны дугаар"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlSymmetry"> </EditText>
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignEnd="@id/strut"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/md_white_1000"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/phone_number_input"
+        android:layout_marginTop="5dp"
+        android:background="@color/primary_dark"
+        android:textColorHint="@color/md_grey_400"
+        android:hint="Нууц үг"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlSymmetry"> </EditText>
+
+    <EditText
+        android:id="@+id/password_confirmation_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/md_white_1000"
+        android:padding="10dp"
+        android:layout_alignStart="@id/strut"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/phone_number_input"
+        android:layout_toEndOf="@+id/password_input"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/primary_dark"
+        android:textColorHint="@color/md_grey_400"
+        android:hint="Нууц үгээ давтана уу"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlSymmetry"> </EditText>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_confirmation_input"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"> </CheckBox>
+
+    <TextView
+        android:id="@+id/tosTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/checkbox"
+        android:text="Би үйлчилгээний нөхцөлийг зөвшөөрч байна."
+        android:clickable="true"
+        android:textSize="12sp"
+        android:textColor="@color/md_grey_700"
+        android:layout_below="@+id/password_confirmation_input"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="5dp"
+        tools:ignore="HardcodedText"
+        android:focusable="true"> </TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+        android:text="Илгээх"
+        android:textColor="@color/md_white_1000"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/primary_dark"
+        app:icon="@drawable/ic_keyboard_hide"
+        app:iconGravity="textStart"
+        app:iconSize="18dp"
+        tools:ignore="HardcodedText"> </com.google.android.material.button.MaterialButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>

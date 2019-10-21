@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradiant"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@color/md_white_1000"
+        app:subtitleTextColor="@color/md_white_1000"
+        android:background="@color/primary_dark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:minHeight="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/toolbarlogo">
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zaal_logo_trans"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="50dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rleftbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#aeb0a5"
+            android:textColor="@color/md_black_1000"
+            android:hint="И-Мэйл хаяг"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:background="#00000000"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c1c1c1"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"> </LinearLayout>
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#aeb0a5"
+            android:hint="Нэвтрэх Нэр"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/md_black_1000"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:imeOptions="actionNext"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="30dp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c1c1c1"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"> </LinearLayout>
+
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#aeb0a5"
+            android:hint="Утасны Дугаар"
+            android:singleLine="true"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:layout_gravity="center"
+            android:textColor="@color/md_black_1000"
+            android:inputType="phone"
+            android:background="#00000000"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="30dp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c1c1c1"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"> </LinearLayout>
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#aeb0a5"
+            android:hint="Нэр"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/md_black_1000"
+            android:imeOptions="actionNext"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="30dp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c1c1c1"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"> </LinearLayout>
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#aeb0a5"
+            android:hint="Нууц Үг"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:imeOptions="actionNext"
+            android:textColor="@color/md_black_1000"
+            android:inputType="textPassword"
+            android:background="#00000000"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="30dp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c1c1c1"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"> </LinearLayout>
+
+        <EditText
+            android:id="@+id/register_password_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#aeb0a5"
+            android:hint="Нууц Үгээ Давтана уу"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:imeOptions="actionSend"
+            android:textColor="@color/md_black_1000"
+            android:inputType="textPassword"
+            android:background="#00000000"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="30dp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c1c1c1"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"> </LinearLayout>
+
+        <ImageView
+            android:id="@+id/register_button"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:src="@drawable/signin"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

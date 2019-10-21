@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@color/md_white_1000"
+        app:subtitleTextColor="@color/md_white_1000"
+        android:background="@color/primary_dark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:minHeight="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/hewtee_logo">
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/md_white_1000"
+        android:layout_above="@+id/tabLayout">
+    </androidx.viewpager.widget.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/tabLayout"
+        android:background="@drawable/drop_shadow" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        app:tabIndicatorColor="@color/md_white_1000"
+        app:tabIndicatorHeight="4dp"
+        app:tabTextAppearance="@style/TabLayoutTextAppearance"
+        app:tabIconTint="@color/tab_selector"
+        app:tabBackground="@color/primary_dark"
+        app:tabMode="fixed">
+    </com.google.android.material.tabs.TabLayout>
+</RelativeLayout>
